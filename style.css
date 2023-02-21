@@ -1,0 +1,297 @@
+*{
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+}
+
+html, body{
+    margin:0;
+    padding:0;
+}
+body{
+    background: #f8eaec;
+}
+
+
+.nav ul{
+    margin: 0;
+}
+.nav li{
+    display: inline;
+}
+.nav a{
+    display: inline-block;
+    padding: .5em;
+    color: whitesmoke;
+    text-decoration:none;
+}
+.main-nav{
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255, .6);
+}
+.main-nav li{
+    padding: 0 5%;
+}
+.nav a:hover{
+    background-color: rgb(9, 67, 75,.7);
+}
+
+
+.main-header{
+    background-color: rgba(195, 51, 51, 0.6);
+    background-image: url("imgs/weirdBackground.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+.harry-name{
+    text-align:center;
+    margin:0;
+    font-size:4em;
+    color:mintcream;
+     
+}
+.harry-name-large{
+    font-size: 8em;
+}
+
+.carousel-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .carousel-slide {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Navigation arrows */
+  .carousel-container .prev,
+  .carousel-container .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .carousel-container .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .carousel-container .prev:hover,
+  .carousel-container .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .musictextheader{
+    color:#ff7b7b;
+  }
+  
+  .musictext{
+    color:#713a3a;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .carousel-container {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .carousel-container {
+      height: 200px;
+    }
+  }
+
+  
+.content-section{
+    margin: 1em;
+    
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    text-align: center;
+}
+
+.section-header{
+    font-weight:normal;
+    color:#ff7b7b;
+    text-align: center;
+    font-size: 2.3em;
+}
+
+#about {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.about-band-img{
+    float:left;
+    height: 250px;
+    width: 250px;
+    margin: 15px;
+    border-radius: 50%;
+}
+.main-footer{
+    background-color: #ff7b7b;
+    color:papayawhip;
+    padding: .25em 0;
+}
+.main-footer-container{
+    display:flex; 
+    align-items: center; 
+}
+.main-footer-container ul{
+    flex-grow:1;
+    text-align: end;
+}
+#music{
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.footer-nav li{
+    padding: 0 .5em;
+}
+.btn{
+    text-align: center;
+
+    vertical-align: middle;
+    padding: 0.80em;
+    cursor: pointer;
+  }
+  a{
+    text-decoration: none;
+  }
+.btn-header{
+    align-items: center;
+    text-align: center;
+    margin: .5em 15% 2em 15%;
+    color: #ffefd5;
+    border: 2px solid #ffffff;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 0;
+    font-size: 1.5em;
+    font-weight: lighter;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 12px;
+  
+}
+.btn-header:hover{
+
+    background-color: rgba(207, 99, 26, 0.3);
+}
+.btn-play{
+    display: block;
+    margin: 0 auto;
+    color:#B8860B ;
+    font-size: 4em;
+    border-radius: 50%;
+    padding:0;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
+.btn-primary{
+    color: #dfe6e9;
+    background-color: #d34d19;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: #B8860B;
+}
+.tour-row{
+    border-bottom: 1px solid #800000;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+.tour-row:last-child{
+    border-bottom:none;
+}
+.tour-item{
+    display:inline-block;
+    padding-right: .5em; 
+   
+}
+.tour-date{
+    color: #713a3a;
+    font-weight: bold;
+    width: 11%;
+}
+.tour-city{
+    width: 24%;
+    color: #713a3a;
+}
+.tour-arena{
+    width: 42%;
+    color: #713a3a;
+}
+.tour-btn{
+    max-width: 19%;
+
+}
+
+.containercarousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.button {
+  height: 60px;
+  width: 80px;
+
+}
+
+.picture {
+  height: 500px;
+  width: 400px;
+}
+
+#botonbackward {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 50px;
+    color: #ff7b7b;
+}
+
+#botonforward {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    font-size: 50px;
+    color: #ff7b7b;
+}
